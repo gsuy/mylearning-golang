@@ -1,5 +1,5 @@
 ## start with command ...
-- go mod init <projectname> // to create go.mod, like node init to create package.json but more betterrrr hahaha :)
+- go mod init <projectname> // to create go.mod, like node init to create package.json ( but more betterrrr!!! hahaha :P )
 
 ## semantic versioning
 - version of package e.g. x.xx.xxx (Major.Minor.Patch)
