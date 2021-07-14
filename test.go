@@ -68,6 +68,32 @@ func main() {
 	// fmt.Println(mo.Robo(1, 2))
 	// mo.Ttt()
 	mo.Ttt()
+
+	// topic pointer
+	gg := "I am gg!"
+	var pt *string = &gg // or pt := &gg
+	fmt.Println(pt)      // => adress of gg eg. 0xc000012568
+	fmt.Println(&pt)     // => adress of pt eg. 0xc000006d18
+	fmt.Println(*&pt)    // => *&<something> = <something> in this ex. pt = 0xc000012568, &pt = 0xc000006d18 so *&pt = 0xc000012568
+	fmt.Println(*pt)     // => value of address of gg
+	*pt = "I am gg new!" // => when need to access variable to edit or something, just add * in first letter
+	fmt.Println(gg)
+
+	wp := "ssadasdadasdasd"
+
+	for _, v := range wp {
+		fmt.Printf("test %c\n", v)
+	}
+
+	// topic test char of string => ["Hi" =>  'H'+ 'i' + '\0']
+	testchar := "thisisstring"
+	fmt.Println(string(testchar[11])) // => g
+	// fmt.Println(string(testchar[12])) // error out of index
+
+	// topic array
+	var array1 []int = []int{1, 2, 3, 4} // or ar array1 [4int = [4]int{1, 2, 3, 4} or array1 := []int{1,2,3,4} or array1 := [4]int{1,2,3,4}
+	fmt.Println(array1)
+
 }
 
 func sumtwo(x int, y int) int { // or func sumtwo( x,y int ) int {
