@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"test/mo" //syntax `[root-path]/<package-name>`it's Package alias ilke `as` in python
 
 	"rsc.io/quote"
 )
 
 func main() {
-	fmt.Println(quote.Go())
+
 	// topic : variable
 	// static: var var_name data_type = value ex. var a int = 1
 	// dynamic: var_name = value ex. a := 1
@@ -61,6 +62,12 @@ func main() {
 		fmt.Println(i1, i2)
 	}
 
+	// topic : package
+	// make sure the first letter of the identifier name for a variable or function is capitalized to public variable or function (first letter name isn’t capitalized to private)
+	fmt.Println(quote.Go())
+	// fmt.Println(mo.Robo(1, 2))
+	// mo.Ttt()
+	mo.Ttt()
 }
 
 func sumtwo(x int, y int) int { // or func sumtwo( x,y int ) int {

@@ -11,3 +11,5 @@
 - go get => install package follow dot go files
 - go mod tidy => delete dependencies isn't active
 - go mod vendor
+
+## ![Executables for Multiple Platforms](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-16-04)
